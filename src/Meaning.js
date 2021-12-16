@@ -1,5 +1,6 @@
 import React from "react";
 import Definition from "./Definition";
+import "./Meaning.css";
 export default function Meaning(props) {
   return (
     <div className="Meaning">
