@@ -13,7 +13,17 @@ function App() {
           <Dictionary defaultKeyword="star" />
         </main>
         <footer className="App-footer">
-          <small>Coded by Marina Pyak</small>
+          <small>
+            This project was coded by Marina Pyak and is
+            <a
+              href="https://github.com/marina-pk/dictionary-project"
+              target="noreferrer"
+              className="footer-link"
+            >
+              {" "}
+              open-sourced on GitHub
+            </a>
+          </small>
         </footer>
       </div>
     </div>
