@@ -1,9 +1,10 @@
 import React from "react";
 import Synonyms from "./Synonyms";
 import Accordion from "react-bootstrap/Accordion";
+import "./Definition.css";
 export default function Definition(props) {
   return (
-    <Accordion eventKey="0">
+    <Accordion>
       <Accordion.Item eventKey="0">
         <Accordion.Header> {props.definition.definition}</Accordion.Header>
         <Accordion.Body>
