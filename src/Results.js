@@ -29,7 +29,7 @@ export default function Results(props) {
     return (
       <div className="Results">
         <section>
-          <h3>Could not find definition, please try another word.</h3>
+          <h3>Could not find definition - please try another word.</h3>
         </section>
       </div>
     );

@@ -52,6 +52,7 @@ export default function Dictionary(props) {
               type="search"
               onChange={handleKeywordChange}
               defaultValue={props.defaultKeyword}
+              placeholder="Search for a word"
             ></input>
           </form>
         </section>
