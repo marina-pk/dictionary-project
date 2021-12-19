@@ -1,5 +1,20 @@
-.accordion-button:not(.collapsed) {
-  color: black;
-  background-color: #e7f1ff;
+.my-accordion-header {
+  background: #f6e8e8;
+  margin: 0px;
   box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+  color: black;
+}
+
+.my-accordion-header button {
+  background: #f6e8e8;
+}
+
+.my-accordion-header button:not(.collapsed) {
+  background: #f6e8e8;
+  color: black;
+}
+
+.my-accordion-item {
+  border: 2px solid #e1d5d2;
+  margin: 8px;
 }

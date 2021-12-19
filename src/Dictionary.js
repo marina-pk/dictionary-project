@@ -9,7 +9,7 @@ export default function Dictionary(props) {
   let [loaded, setLoaded] = useState(false);
   let [photos, setPhotos] = useState(null);
   function handleDictionaryResponse(response) {
-    setResults(response.data[0]);
+    setResults(response);
   }
   function handlePexelsResponse(response) {
     setPhotos(response.data.photos);
@@ -20,7 +20,14 @@ export default function Dictionary(props) {
   }
   function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
-    axios.get(apiUrl).then(handleDictionaryResponse);
+    try {
+      axios
+        .get(apiUrl, { validateStatus: false })
+        .then(handleDictionaryResponse);
+    } catch (err) {
+      console.log(err);
+    }
+
     let pexelsApiKey =
       "563492ad6f91700001000001b43222844620492e8c018415bd2e652e";
     let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=8`;

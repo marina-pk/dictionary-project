@@ -1,5 +1,4 @@
 import React from "react";
-import "./Photos.css";
 import Carousel from "react-bootstrap/Carousel";
 export default function Photos(props) {
   if (props.photos) {

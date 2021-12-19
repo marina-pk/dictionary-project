@@ -5,8 +5,10 @@ import "./Definition.css";
 export default function Definition(props) {
   return (
     <Accordion>
-      <Accordion.Item eventKey="0">
-        <Accordion.Header> {props.definition.definition}</Accordion.Header>
+      <Accordion.Item eventKey="0" bsPrefix="my-accordion-item">
+        <Accordion.Header bsPrefix="my-accordion-header">
+          {props.definition.definition}
+        </Accordion.Header>
         <Accordion.Body>
           <em>{props.definition.example}</em>
           <br />
